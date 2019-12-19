@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Домашка № 1 ";
+}
+
+@model IEnumerable<HomeWork2._2.Models.MobileModel>
+
+<h2>@ViewBag.Title</h2>
+<table class="table">
+    <tr>
+        <th class="th">Id</th>
+        <th class="th">Name</thclass="th">
+        <th class="th">Model</th>
+        <th class="th">Description</th>
+        <th class="th">Price</th>
+        <th class="th">DateCreate</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="">
+
+            <td >@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Model</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+            <td>@item.DateCreate</td>
+
+
+        </tr>
+    }
+</table>
+
